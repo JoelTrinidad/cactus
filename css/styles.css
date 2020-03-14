@@ -1,0 +1,604 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-image: url("../img/Echeveria-cante4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *::before ,*::after {
+    box-sizing: inherit;
+}
+/** Globales **/
+h1 {
+    font-size: 3.4rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem 1rem;
+    min-height: 80vh;
+}
+.boton {
+  border: none;
+  padding: 1rem 2rem;
+  width: 100%;  
+}
+@media (min-width: 768px) {
+    .boton {
+        width: 45%;
+        margin: 1rem auto;
+    }
+}
+.boton-link {
+
+    display: block;
+    color: #fff;
+
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+.btn-100 {
+    width: 100%!important;
+}
+.btn-verde {
+    background-color: rgb(151, 212, 97);
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-verde:hover {
+    background-color: rgb(90, 139, 47);
+}
+.btn-cafe {
+    background-color: rgb(184, 162, 65);
+    transition: background-color 0.3s ease-in-out;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn-cafe:hover {
+    background-color: rgb(90, 77, 21);
+}
+@media (min-width: 768px) {
+    .boton-link {
+        width: 15rem;;
+    }
+}
+.eliminar-btn {
+    background-color: rgb(245, 29, 29);
+    transition: background-color 0.3s ease-in-out;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+.eliminar-btn:hover {
+    background-color: rgb(189, 17, 17);
+}
+.fbx-space-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wd-100, .wd-50 {
+    flex: 0 0 100%
+}
+@media (min-width: 768px) {
+    .wd-50 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+.borde {
+    border: 1px solid rgb(131, 130, 130);
+    padding: 1rem;
+}
+/** Header **/
+.header {
+    background: rgba(96, 155, 130, 0.801);
+    align-items: center;
+}
+.login {
+    margin: 0 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.login a {
+    color: #fff;
+}
+.cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .cabecera {
+        justify-content: flex-end;
+    }
+}
+.logo {
+    flex: 0 0 auto;
+    margin: 0.5rem 0;
+}
+.logo img {
+    border-radius: 50%;
+    width: 8.2rem;
+    background: none;
+}
+.titulo {
+    flex: 0 0 auto;
+    color: #000;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    background: none;
+}
+/*Menu*/
+
+nav.menu{
+    background-color: rgb(151, 212, 97);
+    text-align: center;
+}
+.menu li {
+    display: block;
+
+    transition: .5s;
+}
+
+.menu a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding:  2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+
+.menu li:hover {
+    background-color: rgb(90, 139, 47);
+}
+ 
+@media (min-width:768px){
+    nav.menu>ul {
+        
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu li {
+        flex: 0 0 16.67%;
+        position: relative;
+    }
+}
+
+/*Submenu*/
+.sub-menu {
+    visibility: hidden;
+    transition-delay: 1s;
+}
+.sub-menu ul{
+    list-style: none;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .sub-menu {
+        position: absolute;
+
+    }
+    .sub-menu li {
+        width: 19.6vw;;
+    }
+
+}
+.sub-menu li{
+    background-color: rgb(151, 212, 97);
+    display: none;
+}
+.menu li:hover .sub-menu > li{
+    visibility: visible;
+    display: block;
+
+}
+
+/*Pie*/
+footer.pie{
+    background:rgb(151, 212, 97);
+    height: 14rem;
+    text-align: center;
+}
+
+ul.social li{
+    display: inline-block;
+    margin: 1rem 2rem 0.5rem 0;
+}
+
+ul.social a{
+    font-size: 4rem;
+    color: rgb(51, 43, 6);
+    
+}
+/**Nosotros**/
+.imagen-nosotros {
+    width: 100%;
+    max-height: 50rem;
+}
+.contenido-nosotros {
+    padding: 3rem;
+}
+.contenido-nosotros h2 {
+    text-align: center;
+}
+/** Tienda **/
+.contenedor-productos h2{
+    text-align: center;
+}
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+.producto {
+    padding: 1rem;
+    /*background-color: rgb(151, 212, 97);*/
+    border: 1px solid rgb(204, 203, 203);    
+}
+.detalle-producto{
+    text-align: center;
+}
+.detalle-producto .titulo-producto{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.detalle-producto .precio {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .productos {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+/**Producto**/
+.contenido-producto h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contenedor-producto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedor-producto .detalle-producto{
+    text-align: left;
+    border: 1px solid rgb(131, 130, 130);
+    padding: 1rem;
+}
+.contenedor-producto .imagen-producto, 
+.contenedor-producto .detalle-producto {
+    flex: 0 0 100%;
+}
+.detalle-producto .descripcion {
+    margin: 2rem 0;
+}
+.detalle-producto form fieldset {
+    border: none;
+}
+.contenedor-producto .detalle-producto .precio {
+    margin: 0 0 2rem 4rem;
+}
+.detalle-producto .tamaño input {
+    margin-left: 1rem;
+    width: 2rem;
+}
+.detalle-producto .tamaño span {
+    font-size: 2rem;
+}
+.detalle-producto .cantidad input {
+    width: 5rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenedor-producto .imagen-producto {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .contenedor-producto .detalle-producto {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+/**Blog**/
+.contenedor-blog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedor-blog h2 {
+    text-align: center;
+    flex: 0 0 100%;
+    order: -1;
+}
+.crono-blog {
+    order: -1;
+    flex: 0 0 100%;
+    padding: 4rem
+}
+.meses {
+    list-style: none;
+}
+.meses li {
+    margin-left: 2rem;
+
+}
+.meses a {
+    color: #000;    
+}
+.articulo {
+    border-bottom: 1px solid rgb(187, 186, 186);
+    margin-bottom: 2rem;
+}
+.articulo:last-of-type {
+    border: none;
+}
+@media (min-width: 768px) {
+
+    .crono-blog {
+        flex: 0 0 calc(20% - 1rem);
+        order: 1;
+        border-left: 1px solid rgb(187, 186, 186);
+    }
+    .articulos {
+        flex: 0 0 calc(80% - 1rem);
+        padding: 3rem;  
+    }
+    .articulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .imagen-articulo {
+        flex: 0 0 calc(30% - 1rem);
+        margin-bottom: 1rem; 
+    }
+    .imagen-articulo img {
+        max-height: 25rem;
+        margin: 0 auto;
+    }
+    .contenido-articulo {
+        flex: 0 0 calc(70% - 1rem);
+    }
+
+}
+/**Articulo**/
+.contenedor-articulo-blog {
+    padding: 2rem;
+}
+.contenedor-articulo-blog h2{
+    text-align: center;
+    margin: 0;
+}
+.contenedor-articulo-blog .contenido-articulo-blog {
+    text-align: justify;
+}
+.contenedor-articulo-blog .contenido-articulo-blog p {
+    margin: 1rem 0;
+}
+.contenedor-articulo-blog cite {
+    text-align: right;
+}
+/** Contacto **/
+.contenedor-contacto h2{
+    text-align: center;
+}
+/*Mapa*/
+.mapa{
+    margin: 2rem auto;
+}
+
+.mapa iframe {
+    max-width: 100%;
+}
+/*formulario*/
+.contenedor-formulario {
+    padding: 2rem;
+    background-color: rgb(151, 212, 97);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor-formulario form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenedor-formulario form legend {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-item {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+} 
+.form-item label {
+    flex: 0 0 2rem;
+    margin-right: 1rem;
+}
+.form-item input:not([type="summit"]) {
+    height: 2.8rem;
+    width: 100%;
+}
+.form-item textarea {
+    width: 100%;
+    height: 15rem;
+}
+.boton-contacto {
+    color: #fff;
+    transition: background-color .3s ease-in-out;
+}
+
+
+/*Contacto y entregas*/
+.datos {
+    padding: 3rem;
+}
+.datos p {
+    line-height: 2;
+    font-size: 1.9rem;
+}
+.datos p a {
+    color: #000;
+}
+.datos p span{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.icono {
+    width: 3rem;
+}
+@media (min-width: 768px) {
+    .contenedor-datos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .datos {
+        flex: 0 0 calc( 40% - 1rem);
+    }
+    .imagen-contacto {
+        flex: 0 0 calc( 60% - 1rem);
+        padding: 3rem;
+    }
+}
+/** Carro **/
+.producto-carro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(187, 186, 186);
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+.producto-carro:last-of-type {
+    
+    border: none;
+}
+.imagen-producto {
+    flex: 0 0 calc(50% - 1rem);
+}
+.detalles-producto-c {
+    padding-left: 2rem;
+    border-bottom: 1px solid rgb(187, 186, 186); 
+}
+.detalles-producto-c > div {
+    flex: 0 0 100%;
+
+}
+.detalles-producto-c:last-of-type {
+    border-bottom: none;
+}
+@media (min-width: 768px) {
+    .detalles-producto-c > div {
+        flex: 0 0 25%;
+    }
+}
+.nombre-producto {
+    font-weight: bold;
+}
+.nombre-cientifico {
+    font-style: italic;
+}
+.detalles-producto-c .unidad p {
+    display: inline-block;
+    margin-top: .8rem;
+}
+.eliminar {
+    flex: 0 0 100%;
+}
+.botones .boton {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    margin: 1rem 0;
+    padding: 1.5rem;
+
+}
+.botones .boton-link {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    margin: 1rem 0;
+}
+@media (min-width: 768px) {
+    .producto-carro {
+        padding: 0 2rem;
+    }
+    .imagen-producto {
+        flex: 0 0 calc(10%);
+    }
+    .detalles-producto-c{
+        flex: 0 0 70%;
+    }
+    .detalles-producto-c div {
+        display: inline-block;
+    }
+    .eliminar {
+        flex: 0 0 auto;
+    }
+    .detalles-producto-c .unidad p {
+        display: block;
+        margin-left: 2.5rem;
+    }
+    
+}
+/**Pedido**/
+.subtotal {
+    border-radius: 10px;
+    min-height: 100%;
+    background-color: rgb(184, 162, 65);
+    color: #fff;
+}
+.formulario-pedido form label:not([for="pago"]) {
+    flex: 0 0 10%;
+    
+}
+.formulario-pedido form input:not([type="submit"]) {
+    flex: 0 0 calc(80%);
+    margin: 1rem 0;
+}
+.icono-pp, 
+.icono-master {
+    width: 4rem;
+    margin-left: 1rem;
+}
